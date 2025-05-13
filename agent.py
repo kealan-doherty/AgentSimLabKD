@@ -195,3 +195,9 @@ class SimpleAgent:
 
   def set_location(self, location):
     self.attribute_dictionary["location"] = location
+
+  def get_persona(self):
+    return self.attribute_dictionary["persona"] if "persona" in self.attribute_dictionary else None
+
+  def set_persona(self, persona):
+    self.attribute_dictionary["persona"] = persona
